@@ -11,14 +11,14 @@ function createLoginTracker(userInfo) {
     attemptCount++;
 
     if (attemptCount > 3) {
-      return "Account locked due to too many failed login attempts";
+      return "account locked";
     }
 
     if (passwordAttempt === userInfo.password) {
-      return "Login successful";
+      return "login successful";
     }
 
-    return `Attempt ${attemptCount}: Login failed`;
+    return `Attempt ${attemptCount}: login failed`;
   };
 }
 
